@@ -1,0 +1,26 @@
+order,paper_label,content,metric,file,caption,rows
+1,tab:protocol,protocol,see_table_headers,tables/protocol.csv,Experimental protocol: question and image counts.,12
+2,tab:main,experimental_results,see_table_headers,tables/main.csv,"Actual experimental results: answer selection on Kvasir-VQA-x1 (13,488 questions with Qwen3.8-27B) and SLAKE English (1,061 questions).",14
+3,tab:ablation,experimental_results,see_table_headers,tables/ablation.csv,Actual experimental results: fixed-candidate comparison and refitted evidence ablations.,11
+4,tab:cost,experimental_results,see_table_headers,tables/cost.csv,"Stage timings, extrapolated totals and peak memory on two RTX 4090 GPUs.",12
+5,tab:factual,experimental_results,see_table_headers,tables/factual.csv,Actual experimental results: factual labels on the same 400 stratified questions.,5
+6,tab:feature-map,method,see_table_headers,tables/feature-map.csv,"The 83 coordinates of the shared feature map, before division by sqrt83. Configuration used in the actual experiments.",6
+7,tab:fallbacks,method,see_table_headers,tables/fallbacks.csv,Early returns and the final decision in Algorithm . Configuration used in the actual experiments.,8
+8,tab:cv-folds,experimental_results,see_table_headers,tables/cv-folds.csv,Actual experimental results: five-fold model selection on the 392 fitting images.,7
+9,tab:paired,experimental_results,see_table_headers,tables/paired.csv,Actual experimental results: paired Kvasir-VQA-x1 F1 differences between RCUR and each comparator.,9
+10,tab:thresholds,experimental_results,see_table_headers,tables/thresholds.csv,Actual experimental results: nominal and GBDT cutoffs.,9
+11,tab:bound-quantiles,experimental_results,see_table_headers,tables/bound-quantiles.csv,Actual experimental results: revision bounds and tightening.,8
+12,tab:retrieval,experimental_results,see_table_headers,tables/retrieval.csv,Actual experimental results: rebuilt retrieval pipelines under a common final candidate budget.,6
+13,tab:scales,experimental_results,see_table_headers,tables/scales.csv,Actual experimental results: candidate and bank budgets.,7
+14,tab:cal-size,experimental_results,see_table_headers,tables/cal-size.csv,Actual experimental results: calibration-packet budget with the fitting set fixed.,6
+15,tab:fields,experimental_results,see_table_headers,tables/fields.csv,Actual experimental results: complete refitted field and uncertainty ablations.,11
+16,tab:prompts,experimental_results,see_table_headers,tables/prompts.csv,Actual experimental results: evidence-prompt sensitivity with a fixed direct cache.,5
+17,tab:slake-details,experimental_results,see_table_headers,tables/slake-details.csv,"Actual experimental results: SLAKE English results on the same 1,061 test questions.",5
+18,tab:lp-tail,experimental_results,see_table_headers,tables/lp-tail.csv,Actual experimental results: conditional LP cost by final candidate count.,5
+19,tab:strata,experimental_results,see_table_headers,tables/strata.csv,Actual experimental results: stratum sizes and factual correctness counts.,9
+20,tab:factual-transitions,experimental_results,see_table_headers,tables/factual-transitions.csv,Actual experimental results: final factual labels paired against RCUR.,9
+21,tab:rater-counts,experimental_results,see_table_headers,tables/rater-counts.csv,Actual experimental results: original assessor labels (400 questions).,13
+22,tab:groups,experimental_results,set_token_f1,tables/groups.csv,Actual experimental results: set-F1 by mutually exclusive reporting group.,8
+23,tab:legacy,experimental_results,set_token_f1,tables/legacy.csv,Actual experimental results: backbones and historical protocols (set F1).,5
+24,tab:initial-ablation,experimental_results,set_token_f1,tables/initial-ablation.csv,Actual experimental results: initial set-F1 structure and feature-block ablations.,12
+25,tab:alpha,experimental_results,set_token_f1,tables/alpha.csv,Actual experimental results: set F1 by calibration level (98 packets).,6

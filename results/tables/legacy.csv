@@ -1,0 +1,5 @@
+Protocol / backbone,Direct F1,Method F1,Setting
+Initial set / Qwen3.5-9B,0.3982,0.4064,RCUR
+Initial set / Qwen3.8-27B,0.5075,0.5237,RCUR
+Legacy / Qwen3.5-9B,0.4160,0.4368,RC-ETR
+Legacy SLAKE,0.6973,0.7108,Bucket gate

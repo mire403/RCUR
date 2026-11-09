@@ -1,0 +1,9 @@
+Comparator label,RCUR correct,RCUR incorrect,RCUR unresolved
+Direct anchor,,,
+Correct,265,4,2
+Incorrect,24,68,2
+Unresolved,7,2,26
+Nominal selection,,,
+Correct,272,6,3
+Incorrect,19,63,3
+Unresolved,5,5,24

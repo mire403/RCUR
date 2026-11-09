@@ -1,0 +1,12 @@
+Stage / method,Total (s),Mean (s),CPU GiB,GPU GiB
+Fitting features,3.39,0.0081,2.41,-
+15 cross-validation fits,8.74,0.5824,2.66,-
+Final ridge fit,0.07,0.0714,2.52,-
+Calibration,2.62,0.0267,2.58,-
+Direct + evidence generation,65416.80,4.8500,6.84,35.86
+Candidates + features,99.81,0.0074,3.17,-
+LP + verification (all),2886.43,0.2140,3.42,-
+End-to-end RCUR,68403.04,5.0714,6.84,35.86
+27B adaptations,,,,
+MMed-RAG adaptation,10126.4,6.2831,NR,40.72
+LENS adaptation,7843.7,7.4628,NR,43.17

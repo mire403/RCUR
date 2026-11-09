@@ -1,0 +1,11 @@
+Variant,r,F1,Benefit,Harm,Tie
+"Same candidates, estimator and radius",,,,,
+Independent box,0.4337,0.51532,725,83,40
+RCUR,0.4337,0.52363,1121,76,37
+Refitted and recalibrated evidence ablations,,,,,
+Without lesion type,0.4691,0.51898,917,108,55
+Without lesion count,0.4498,0.52164,1038,94,53
+Without location,0.4627,0.52010,971,105,57
+Without text overlay,0.4299,0.52388,1146,84,43
+Without both presence fields,0.4876,0.51637,787,116,61
+Without uncertainty terms,0.4268,0.52408,1167,91,44

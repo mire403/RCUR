@@ -1,0 +1,5 @@
+Variant,F1,Harm (%),Parse (%),Unknown (%),Time (s)
+P0: seven-field JSON,0.52363,0.56,99.33,19.52,3.17
+P1: short definitions,0.52372,0.62,99.50,18.87,3.28
+P2: visible evidence,0.52296,0.48,99.58,21.97,3.36
+P3: description + JSON,0.51997,0.90,98.58,18.15,4.11

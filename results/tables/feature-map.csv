@@ -1,0 +1,6 @@
+Positions,Count,Block,Coordinates and order
+1-6,6,Base,"F(a,q), F(a,a_0), kappa(a,q), kappa(a,a_0), min(|T(a)|,24)/24, N(a,a_0)"
+7-20,14,Single field,Alternate r_j(a) and b_j(a) in registry order
+21-62,42,Field pairs,"Alternate r_j(a)r_k(a) and m_jm_kp(a)p(e_j)p(e_k), with j<k in lexicographic pair order"
+63-69,7,Uncertainty,u_confr_j(a) in registry order
+70-83,14,Question role,Alternate s_j(q)r_j(a) and s_j(q)b_j(a) in registry order

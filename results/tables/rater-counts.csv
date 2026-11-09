@@ -1,0 +1,13 @@
+Method,Assessor A,B correct,B incorrect,B unresolved
+Direct anchor,Correct,255,7,4
+,Incorrect,9,78,5
+,Unresolved,6,3,33
+Nominal,Correct,262,8,4
+,Incorrect,9,75,5
+,Unresolved,4,4,29
+Independent box,Correct,260,7,4
+,Incorrect,7,78,4
+,Unresolved,5,3,32
+RCUR,Correct,285,5,3
+,Incorrect,6,63,3
+,Unresolved,4,3,28

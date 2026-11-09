@@ -1,0 +1,12 @@
+Variant,Dim.,r,F1,Rev. (%),Harm (%)
+"Fixed estimator, candidates and radius",,,,,
+Full RCUR,83,0.4337,0.5237,9.15,0.93
+Independent box,83,0.4337,0.5181,6.29,0.62
+Incidence only,83,0.4337,0.5218,8.15,0.83
+Jaccard only,83,0.4337,0.5192,6.80,0.67
+"Feature ablations, refitted and recalibrated",,,,,
+Without pair interactions,41,0.4592,0.5197,7.90,1.04
+Without question roles,69,0.4728,0.5185,7.73,1.16
+Without uncertainty terms,76,0.4268,0.5242,9.54,1.03
+Without single-field terms,69,0.4941,0.5162,7.01,1.21
+Base features only,6,0.5873,0.5109,3.67,0.81

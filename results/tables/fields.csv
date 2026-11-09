@@ -1,0 +1,11 @@
+Variant,r,F1,Rev. (%),Harm (%)
+Full seven fields,0.4337,0.52363,9.15,0.56
+Without lesion presence,0.4579,0.51996,8.23,0.76
+Without lesion type,0.4691,0.51898,8.01,0.80
+Without lesion count,0.4498,0.52164,8.79,0.70
+Without location,0.4627,0.52010,8.40,0.78
+Without instrument,0.4416,0.52266,8.97,0.61
+Without text overlay,0.4299,0.52388,9.44,0.62
+Without abnormality,0.4523,0.52104,8.59,0.70
+Without both presence fields,0.4876,0.51637,7.15,0.86
+Without uncertainty terms,0.4268,0.52408,9.65,0.67

@@ -1,0 +1,177 @@
+{
+  "paired_questions": 13488,
+  "paired_packets": 3568,
+  "paired_gain": 0.008311666364952508,
+  "paired_ci": [
+    0.007481092518400689,
+    0.009142329553614903
+  ],
+  "paired_holm_p": 0.00019998000199980003,
+  "changed": {
+    "total": 487,
+    "higher": 448,
+    "lower": 24,
+    "tied": 15
+  },
+  "quantiles": [
+    {
+      "percentile": 5,
+      "verified": 0.00031,
+      "tightening": 0
+    },
+    {
+      "percentile": 10,
+      "verified": 0.00091,
+      "tightening": 0
+    },
+    {
+      "percentile": 25,
+      "verified": 0.0027,
+      "tightening": 0
+    },
+    {
+      "percentile": 50,
+      "verified": 0.0084,
+      "tightening": 0.0019
+    },
+    {
+      "percentile": 75,
+      "verified": 0.0246,
+      "tightening": 0.0141
+    },
+    {
+      "percentile": 90,
+      "verified": 0.0473,
+      "tightening": 0.0387
+    },
+    {
+      "percentile": 95,
+      "verified": 0.0729,
+      "tightening": 0.0614
+    }
+  ],
+  "packets": [
+    {
+      "label": "Retrospective",
+      "n": 3568,
+      "covered": 3397,
+      "harmed": 54,
+      "uncovered_without_loss": 117
+    },
+    {
+      "label": "Prospective",
+      "n": 500,
+      "covered": 479,
+      "harmed": 9,
+      "coverage_ci": [
+        0.9365130594670811,
+        0.9738164232238529
+      ],
+      "harm_ci": [
+        0.008262954434763135,
+        0.033893696108537937
+      ],
+      "uncovered_without_loss": 12
+    }
+  ],
+  "calibration": [
+    {
+      "packets": 19,
+      "rank": 19,
+      "radius": 0.6842,
+      "f1": 0.5114369480815738
+    },
+    {
+      "packets": 39,
+      "rank": 38,
+      "radius": 0.5216,
+      "f1": 0.5176697401930803
+    },
+    {
+      "packets": 59,
+      "rank": 57,
+      "radius": 0.4618,
+      "f1": 0.52149574108276
+    },
+    {
+      "packets": 79,
+      "rank": 76,
+      "radius": 0.4683,
+      "f1": 0.5210373261954528
+    },
+    {
+      "packets": 98,
+      "rank": 95,
+      "radius": 0.4337,
+      "f1": 0.5236292100292974
+    }
+  ],
+  "top_k": [
+    {
+      "top_k": 10,
+      "bank": 2333,
+      "anchor": 0.4989637496829975,
+      "oracle": 0.6813,
+      "radius": 0.3962,
+      "lp_seconds": 0.0746,
+      "f1": 0.5097876820673392
+    },
+    {
+      "top_k": 20,
+      "bank": 2333,
+      "anchor": 0.5030637496829975,
+      "oracle": 0.7256,
+      "radius": 0.4218,
+      "lp_seconds": 0.1283,
+      "f1": 0.5191408626723213
+    },
+    {
+      "top_k": 40,
+      "bank": 2333,
+      "anchor": 0.5046709190187033,
+      "oracle": 0.7542,
+      "radius": 0.4337,
+      "lp_seconds": 0.214,
+      "f1": 0.5236292100292976
+    },
+    {
+      "top_k": 80,
+      "bank": 2333,
+      "anchor": 0.5052637496829975,
+      "oracle": 0.7818,
+      "radius": 0.5012,
+      "lp_seconds": 0.4371,
+      "f1": 0.5222975649261766
+    }
+  ],
+  "lp_bins": [
+    {
+      "candidates": "1–20",
+      "entrants": 287,
+      "median_s": 0.069,
+      "p95_s": 0.341,
+      "fallbacks": 3
+    },
+    {
+      "candidates": "21–40",
+      "entrants": 784,
+      "median_s": 0.171,
+      "p95_s": 1.082,
+      "fallbacks": 11
+    },
+    {
+      "candidates": "41–60",
+      "entrants": 1138,
+      "median_s": 0.402,
+      "p95_s": 3.486,
+      "fallbacks": 28
+    },
+    {
+      "candidates": "61–81",
+      "entrants": 1004,
+      "median_s": 0.816,
+      "p95_s": 6.271,
+      "fallbacks": 52
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Method,F1,EM (%),Rev. (%),Benefit,Harm,Tie
+Direct anchor,0.77860,72.76,0.00,0,0,0
+Target-domain nominal,0.79032,74.36,18.76,112,67,20
+Target-domain RCUR,0.78334,73.33,4.43,31,12,4
+Source-schema transfer,0.77424,72.20,7.35,26,41,11

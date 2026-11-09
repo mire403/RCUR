@@ -1,0 +1,8 @@
+Stage,Condition,Outcome
+Asset validation,Input schema or frozen-asset hashes do not match,Return a version error before selection
+Input processing,"Empty question, OOV share >0.8, raw answer length >256 scoring tokens, or no known field",Reduce the pool to d
+Fitted assets,Training failed or r=inf,Return d
+Radius check,r>=max_a|Delta_a|,Return d before constructing LPs
+LP verification,"Feasibility or a bound cannot be verified, or the cumulative pivot budget is exhausted",Return d and record the terminal state
+Bound comparison,Every verified alternative bound is at most 10^-8,Return d
+Accepted revision,The largest verified bound exceeds 10^-8,Return its candidate string; use the fixed tie rule

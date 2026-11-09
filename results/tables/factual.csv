@@ -1,0 +1,5 @@
+Strategy,Correct,Incorrect,Unresolved,Correct (%),Weighted (%),kappa
+Direct anchor,271,94,35,67.75,67.75,0.8264
+Nominal,281,85,34,70.25,70.25,0.8199
+Independent box,275,90,35,68.75,68.75,0.8439
+RCUR,296,74,30,74.00,74.01,0.8573

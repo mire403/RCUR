@@ -50,7 +50,7 @@ Here, $d$ is the direct anchor and $\mathcal P_r$ combines the calibrated gain b
 
 ## Quick start
 
-The core implementation runs on CPU with Python 3.12 and NumPy 2.3.5. It does not load a vision-language model during answer selection.
+The core implementation runs on CPU with Python 3.12 and NumPy 2.3.5.
 
 ```bash
 git clone https://github.com/mire403/RCUR.git
@@ -100,7 +100,7 @@ With the candidates, predictor and radius fixed, coupling changes **487 selectio
 
 The fresh-packet evaluation uses **public-data resampling**, with 98 new calibration packets and 500 evaluation packets containing 1,891 questions. Joint coverage is 479/500 and packet harm is 9/500. Mean F1 rises from 0.50485 to 0.52003.
 
-On the separate 400-question factual assessment, RCUR has 296 correct answers (74.00%), compared with 271 (67.75%) for the anchor. The released factual tables include unresolved outcomes, category counts, label transitions and rater agreement. Factual labels and token-F1 gain are reported as separate outcomes.
+On the 400-question factual assessment, RCUR has 296 correct answers (74.00%), compared with 271 (67.75%) for the anchor. The released factual tables include unresolved outcomes, category counts, label transitions and rater agreement.
 
 <p align="center">
   <img src="figure/Figure5.png" width="960" alt="Packet coverage harm and revision behavior">
@@ -126,9 +126,9 @@ The results also cover retrieval and candidate budgets, field and prompt ablatio
 | [`results/index.csv`](results/index.csv) | Mapping of all 25 manuscript tables to their CSV files, including protocol and method tables |
 | [`results/tables/`](results/tables/) | Main and appendix tables covering comparisons, ablations, factual assessment, runtime and the earlier set-F1 study |
 
-CSV files use UTF-8; question-level records are gzip-compressed. `question_index` and `packet_index` are internal integer identifiers. Questions sharing a packet index belong to the same image packet. A method's token F1 is `2 * overlap / (prediction_length + reference_length)`. Rates in `main_methods.csv` are fractions; columns explicitly marked `%` in the manuscript tables are percentages. Earlier set-F1 results retain their own metric and are identified in the index.
+CSV files use UTF-8; question-level records are gzip-compressed. `question_index` and `packet_index` are internal integer identifiers. Questions sharing a packet index belong to the same image packet. A method's token F1 is `2 * overlap / (prediction_length + reference_length)`. Rates in `main_methods.csv` are fractions; columns explicitly marked `%` in the manuscript tables are percentages. The index labels earlier set-F1 results by their scoring protocol.
 
-The raw image datasets are available from their original providers: [Kvasir-VQA-x1](https://datasets.simula.no/kvasir-vqa-x1/) and [SLAKE](https://www.med-vqa.com/slake/). The new image-packet evaluation does not involve newly collected patient data.
+The raw image datasets are available from their original providers: [Kvasir-VQA-x1](https://datasets.simula.no/kvasir-vqa-x1/) and [SLAKE](https://www.med-vqa.com/slake/).
 
 For example, the following reads the released main records and calculates each method's mean F1:
 
@@ -181,13 +181,13 @@ RCUR/
 | `calibration/exact_calibration.py` | Packet calibration directly from integer token counts |
 | `run_rcur.py` | JSON interfaces for fitting, calibration and batch revision |
 
-The medical results use `rcur_core.calibrate_radius`. The count-based calibration interface is included separately and tested at exact arithmetic boundaries.
+Use `rcur_core.calibrate_radius` for the calibration protocol reported in the paper. `calibration/exact_calibration.py` computes packet radii from integer token counts.
 
 **Fitting.** `fitting.json` contains `packets`, each with a `questions` list. A question supplies `features` (a `K × 83` array normalized by `sqrt(83)`), `anchor_index` (zero-based) and `gains` (one reference F1 gain per candidate). The command writes the fitted coefficients and fit status.
 
 **Calibration.** `calibration.json` uses the same packet/question organization. Each question supplies matching `gains` and `predictions` arrays. All questions and candidates for an image contribute to its maximum residual. The output preserves the floating-point radius and its hexadecimal representation.
 
-**Revision.** `questions.json` contains a `questions` list. Each question supplies `question_id`, `anchor_index`, `features` and a `candidates` list. A candidate has `text` (the original answer), `identity` (its unique normalized identity) and `tokens` (the scoring-token list, retaining repetitions). To use already computed gains, omit `--model` and supply `predictions` instead of `features`. Inference does not take reference answers.
+**Revision.** `questions.json` contains a `questions` list. Each question supplies `question_id`, `anchor_index`, `features` and a `candidates` list. A candidate has `text` (the original answer), `identity` (its unique normalized identity) and `tokens` (the scoring-token list, retaining repetitions). To use already computed gains, omit `--model` and supply `predictions` instead of `features`.
 
 The output contains `selected_index`, `answer`, `revised`, `reason`, `pivots` and verified `bounds`. The default threshold is `1e-8`, with a cumulative budget of 50,000 simplex pivots per question. The anchor is returned when the verified decision conditions are not met.
 
